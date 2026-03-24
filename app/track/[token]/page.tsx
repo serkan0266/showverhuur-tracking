@@ -106,11 +106,11 @@ export default function TrackPage({
 
         <div style={{ marginBottom: 20 }}>
           <LiveMap
-            driverLat={data.driver_lat}
-            driverLng={data.driver_lng}
-            destinationLat={data.destination_lat}
-            destinationLng={data.destination_lng}
-          />
+  driverLat={data.driver_lat ?? null}
+  driverLng={data.driver_lng ?? null}
+  destinationLat={data.destination_lat ?? null}
+  destinationLng={data.destination_lng ?? null}
+/>
         </div>
 
         <div
